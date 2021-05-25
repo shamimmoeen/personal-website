@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .menu-btn-md {
+        @apply text-xl inline-flex items-center font-medium text-gray-500 hover:text-gray-900 mx-3;
+    }
+
+    .social-btn-md {
+        @apply p-1 mx-1 text-gray-600 hover:text-gray-900;
+    }
+}
