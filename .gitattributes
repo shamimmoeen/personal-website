@@ -1,0 +1,5 @@
+package-lock.json -diff
+yarn.lock -diff
+build/*.js -diff
+*.map -diff
+rev-manifest.json -diff

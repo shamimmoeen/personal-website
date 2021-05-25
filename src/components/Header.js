@@ -1,16 +1,14 @@
 import React, { Fragment } from 'react';
-import Avatar from '../Avatar';
-import Icon from '@mdi/react';
-import { mdiThemeLightDark } from '@mdi/js';
+import Avatar from './Avatar';
 import { Popover, Transition } from '@headlessui/react';
 import { XIcon, MenuIcon } from '@heroicons/react/outline';
-import Github from '../SocialIcons/Github';
-import Linkedin from '../SocialIcons/Linkedin';
-import DarkModeSwitch from '../DarkModeSwitch';
+import Github from './SocialIcons/Github';
+import Linkedin from './SocialIcons/Linkedin';
+import DarkModeSwitch from './DarkModeSwitch';
 
 const menuItems = ['Home', 'About Me', 'Resume', 'Projects', 'Contact'];
 
-const HeaderMod = () => {
+const Header = () => {
 	return (
 		<>
 			<Popover className="relative bg-white border-b-2 border-gray-100">
@@ -20,6 +18,9 @@ const HeaderMod = () => {
 							<div className={'flex justify-between items-center py-6'}>
 								<div className={'justify-start flex-1'}>
 									<Avatar size={40} />
+								</div>
+								<div className="flex md:hidden mr-3">
+									<DarkModeSwitch />
 								</div>
 								<div className={'md:hidden -mr-2 -my-2'}>
 									<Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -38,7 +39,9 @@ const HeaderMod = () => {
 									<Github classes={'social-btn-md'} />
 									<Linkedin classes={'social-btn-md'} />
 
-									<DarkModeSwitch />
+									<div className="flex ml-4">
+										<DarkModeSwitch />
+									</div>
 								</div>
 							</div>
 						</div>
@@ -99,4 +102,4 @@ const HeaderMod = () => {
 	);
 };
 
-export default HeaderMod;
+export default Header;
