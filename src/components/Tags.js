@@ -10,7 +10,7 @@ const Tags = () => {
 			textColour={null}
 			maxSpeed={0.06}
 			freezeActive
-			// shuffleTags
+			shuffleTags
 			shape="sphere"
 			zoom={1}
 			noSelect
@@ -20,28 +20,31 @@ const Tags = () => {
 			width={size}
 			height={size}
 			weight={'size'}
+			maxSpeed={0.05}
+			initial={[0.17, 0.1]}
+			fadeIn={500}
 			tags={[
 				{ value: 'Javascript', weight: 20 },
-				{ value: 'React', weight: 20 },
+				{ value: 'React', weight: 30 },
 				{ value: 'HTML5', weight: 20 },
 				{ value: 'CSS3', weight: 20 },
-				{ value: 'PHP', weight: 25 },
+				{ value: 'PHP', weight: 30 },
 				{ value: 'Git', weight: 30 },
 				{ value: 'Redux', weight: 20 },
 				{ value: 'NodeJS', weight: 20 },
-				{ value: 'MySQL', weight: 20 },
+				{ value: 'MySQL', weight: 30 },
 				{ value: 'MongoDB', weight: 25 },
 				{ value: 'Stripe', weight: 15 },
 				{ value: 'Paypal', weight: 15 },
 				{ value: 'Bootstrap', weight: 20 },
-				{ value: 'Tailwindcss', weight: 20 },
-				{ value: 'SCSS', weight: 20 },
-				{ value: 'Gulp', weight: 20 },
-				{ value: 'BrowserSync', weight: 20 },
+				{ value: 'Tailwindcss', weight: 25 },
+				{ value: 'SCSS', weight: 25 },
+				{ value: 'Gulp', weight: 15 },
+				{ value: 'BrowserSync', weight: 15 },
 				{ value: 'jQuery', weight: 20 },
-				{ value: 'REST', weight: 20 },
+				{ value: 'REST', weight: 25 },
 				{ value: 'Gutenberg', weight: 20 },
-				{ value: 'WordPress', weight: 20 },
+				{ value: 'WordPress', weight: 30 },
 			]}
 		/>
 	);
