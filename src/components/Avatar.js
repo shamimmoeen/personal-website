@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import avatar from '../images/avatar.jpg';
 import avatar32 from '../images/avatar-32.jpg';
 
@@ -25,9 +26,9 @@ const Avatar = ({ size, onlyImage = false }) => {
 	}
 
 	return (
-		<a href={'/'} className={'inline-flex'}>
+		<Link className={'inline-flex'} to={'/'}>
 			{image}
-		</a>
+		</Link>
 	);
 };
 

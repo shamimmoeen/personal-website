@@ -1,14 +1,20 @@
 import React, { Fragment } from 'react';
+import { Link } from 'react-router-dom';
 import Avatar from './Avatar';
 import { Popover, Transition } from '@headlessui/react';
 import { XIcon, MenuIcon } from '@heroicons/react/outline';
-import Github from './SocialIcons/Github';
-import Linkedin from './SocialIcons/Linkedin';
+import Github from './Social_Icon/Github';
+import Linkedin from './Social_Icon/Linkedin';
 import DarkModeSwitch from './DarkModeSwitch';
+import string_to_slug from '../utils/slugify';
 
-const menuItems = ['Home', 'About Me', 'Resume', 'Projects', 'Contact'];
+const menuItems = ['About Me', 'Resume', 'Projects', 'Contact'];
 
 const Header = () => {
+	const getLinkTo = (route) => {
+		return string_to_slug(route);
+	};
+
 	return (
 		<>
 			<Popover className="relative bg-white border-b-2 border-gray-100">
@@ -30,9 +36,9 @@ const Header = () => {
 								</div>
 								<div className={'hidden md:flex flex-auto justify-center'}>
 									{menuItems.map((item) => (
-										<button className="menu-btn-md" key={item}>
+										<Link className="menu-btn-md" key={item} to={'/' + getLinkTo(item)}>
 											{item}
-										</button>
+										</Link>
 									))}
 								</div>
 								<div className={'hidden md:flex flex-1 justify-end items-center'}>
