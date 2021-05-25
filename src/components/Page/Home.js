@@ -15,7 +15,7 @@ const Home = () => {
 					<h5 className="text-2xl">a Frontend Developer </h5>
 					<div className="flex mt-7">
 						<a
-							className="bg-indigo-600 text-white px-5 py-3 inline-flex rounded mr-3"
+							className="bg-indigo-600 text-white px-5 py-3 inline-flex items-center rounded mr-3"
 							href="https://www.upwork.com/freelancers/~01e00fa4e832283b21"
 							target="_blank"
 							rel="noreferrer"
@@ -23,7 +23,7 @@ const Home = () => {
 							Hire Me
 						</a>
 						<a
-							className="text-indigo-600 border-2 border-indigo-600 px-5 py-3 inline-flex rounded mr-3"
+							className="text-indigo-600 border-2 border-indigo-600 px-5 py-3 inline-flex items-center rounded"
 							href="https://www.upwork.com/freelancers/~01e00fa4e832283b21"
 							target="_blank"
 							rel="noreferrer"

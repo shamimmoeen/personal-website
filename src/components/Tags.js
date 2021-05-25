@@ -8,7 +8,6 @@ const Tags = () => {
 		<TagsCanvas
 			className="text-gray-600"
 			textColour={null}
-			maxSpeed={0.06}
 			freezeActive
 			shuffleTags
 			shape="sphere"
