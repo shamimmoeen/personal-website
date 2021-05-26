@@ -6,7 +6,7 @@ const Tags = () => {
 
 	return (
 		<TagsCanvas
-			className="text-gray-600"
+			className="text-gray-600 max-w-full"
 			textColour={null}
 			freezeActive
 			shuffleTags
