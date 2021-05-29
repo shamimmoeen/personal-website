@@ -2,7 +2,7 @@ import React from 'react';
 import TagsCanvas from 'react-tags-canvas';
 
 const Tags = () => {
-	const size = 500;
+	const size = 600;
 
 	return (
 		<TagsCanvas
@@ -32,22 +32,26 @@ const Tags = () => {
 				{ value: 'MySQL', weight: 24 },
 				{ value: 'WordPress', weight: 25 },
 				{ value: 'Git', weight: 24 },
+				{ value: 'Linux', weight: 20 },
 				{ value: 'Paypal', weight: 15 },
 				{ value: 'Stripe', weight: 15 },
 				{ value: 'REST', weight: 21 },
+				{ value: 'JSON', weight: 18 },
 				{ value: 'SCSS', weight: 21 },
 				{ value: 'Gulp', weight: 15 },
 				{ value: 'Javascript', weight: 18 },
+				{ value: 'npm', weight: 14 },
 				{ value: 'React', weight: 24 },
 				{ value: 'NodeJS', weight: 18 },
 				{ value: 'ExpressJS', weight: 16 },
 				{ value: 'Heroku', weight: 14 },
 				{ value: 'Netlify', weight: 14 },
+				{ value: 'Lodash', weight: 14 },
 				{ value: 'Redux', weight: 18 },
 				{ value: 'MongoDB', weight: 21 },
 				{ value: 'BrowserSync', weight: 15 },
 				{ value: 'Gutenberg', weight: 18 },
-				{ value: 'Tailwindcss', weight: 21 },
+				{ value: 'Tailwindcss', weight: 20 },
 			]}
 		/>
 	);
