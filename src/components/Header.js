@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Avatar from './Avatar';
 import { Popover, Transition } from '@headlessui/react';
 import { XIcon, MenuIcon } from '@heroicons/react/outline';
@@ -20,7 +20,7 @@ const Header = () => {
 			<Popover className="relative bg-white border-b-2 border-gray-100">
 				{({ open }) => (
 					<>
-						<div className={'max-w-7xl mx-auto px-4 sm:px-6'}>
+						<div className={'max-w-7xl mx-auto px-6 md:px-4'}>
 							<div className={'flex justify-between items-center py-6'}>
 								<div className={'justify-start flex-1'}>
 									<Avatar size={40} />
@@ -36,14 +36,19 @@ const Header = () => {
 								</div>
 								<div className={'hidden md:flex flex-auto justify-center'}>
 									{menuItems.map((item) => (
-										<Link className="menu-btn-md" key={item} to={'/' + getLinkTo(item)}>
+										<NavLink
+											className="text-xl inline-flex items-center font-medium text-gray-500 hover:text-gray-700 mx-3"
+											activeClassName="!text-indigo-500"
+											key={item}
+											to={'/' + getLinkTo(item)}
+										>
 											{item}
-										</Link>
+										</NavLink>
 									))}
 								</div>
 								<div className={'hidden md:flex flex-1 justify-end items-center'}>
-									<Github classes={'social-btn-md'} />
-									<Linkedin classes={'social-btn-md'} />
+									<Github classes={'p-1 mx-1 text-[#333]'} />
+									<Linkedin classes={'p-1 mx-1 text-[#0a66c2]'} />
 
 									<div className="flex ml-4">
 										<DarkModeSwitch />
@@ -81,12 +86,14 @@ const Header = () => {
 										<div className="grid grid-cols-1 gap-3 my-5">
 											{menuItems.map((item) => (
 												<div className="self-start">
-													<button
+													<NavLink
+														className="text-xl text-gray-500 font-medium hover:text-gray-700"
+														activeClassName="!text-indigo-500"
 														key={item}
-														className="text-xl text-gray-500 font-medium hover:text-gray-900"
+														to={'/' + getLinkTo(item)}
 													>
 														{item}
-													</button>
+													</NavLink>
 												</div>
 											))}
 										</div>
@@ -94,8 +101,8 @@ const Header = () => {
 											Get in touch
 										</h4>
 										<div className="flex">
-											<Github classes="text-gray-600 hover:text-gray-900" />
-											<Linkedin classes="text-gray-600 hover:text-gray-900 ml-2" />
+											<Github classes="text-[#333]" />
+											<Linkedin classes="text-[#0a66c2] ml-2" />
 										</div>
 									</div>
 								</div>
