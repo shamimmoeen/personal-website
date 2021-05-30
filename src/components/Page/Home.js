@@ -18,7 +18,7 @@ const Home = () => {
 					<h3 className="text-xl xl:text-2xl">a Frontend Developer</h3>
 					<div className="flex justify-center lg:justify-start mt-5 md:mt-7">
 						<a
-							className="bg-indigo-600 text-white px-4 py-2 inline-flex items-center rounded mr-3 hover:bg-indigo-500"
+							className="btn-primary mr-3"
 							href="https://www.upwork.com/freelancers/~01e00fa4e832283b21"
 							target="_blank"
 							rel="noreferrer"
@@ -26,7 +26,7 @@ const Home = () => {
 							Hire Me
 						</a>
 						<a
-							className="text-indigo-600 border-2 border-indigo-600 px-4 py-2 inline-flex items-center rounded hover:border-indigo-500 hover:text-indigo-500"
+							className="btn-secondary"
 							href="https://www.upwork.com/freelancers/~01e00fa4e832283b21"
 							target="_blank"
 							rel="noreferrer"

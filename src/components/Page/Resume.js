@@ -2,10 +2,10 @@ import React from 'react';
 
 const Resume = () => {
 	return (
-		<div className="max-w-7xl mx-auto px-6 md:px-4 pt-10 pb-5 lg:py-20 text-gray-700">
+		<div className="max-w-7xl mx-auto px-6 md:px-4 pt-10 pb-16 lg:py-20 text-gray-700">
 			<div className="text-lg leading-loose xl:max-w-4xl xl:mx-auto">
-				<div className="flex mb-12">
-					<div className="max-w-[280px] w-full">
+				<div className="md:flex mb-12">
+					<div className="md:max-w-[220px] lg:max-w-[280px] mb-10 md:mb-0 w-full">
 						<span className="text-3xl font-medium tracking-wide text-indigo-500 border-b-[3px] border-indigo-500">
 							Careers
 						</span>
@@ -42,8 +42,8 @@ const Resume = () => {
 					</div>
 				</div>
 				<hr />
-				<div className="flex mt-12">
-					<div className="max-w-[280px] w-full">
+				<div className="md:flex mt-12">
+					<div className="md:max-w-[220px] lg:max-w-[280px] mb-10 md:mb-0 w-full">
 						<span className="text-3xl font-medium tracking-wide text-indigo-500 border-b-[3px] border-indigo-500">
 							Education
 						</span>
@@ -76,7 +76,7 @@ const Resume = () => {
 						href="https://www.upwork.com/freelancers/~01e00fa4e832283b21"
 						target="_blank"
 						rel="noreferrer"
-						className="bg-indigo-600 text-white px-4 py-2 inline-flex items-center rounded mr-3 hover:bg-indigo-500"
+						className="btn-primary mr-3"
 					>
 						Download Resume
 					</a>
@@ -84,7 +84,7 @@ const Resume = () => {
 						href="https://www.upwork.com/freelancers/~01e00fa4e832283b21"
 						target="_blank"
 						rel="noreferrer"
-						className="text-indigo-600 border-2 border-indigo-600 px-4 py-2 inline-flex items-center rounded hover:border-indigo-500 hover:text-indigo-500"
+						className="btn-secondary"
 					>
 						My Resume
 					</a>
