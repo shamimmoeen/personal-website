@@ -14,30 +14,27 @@ const Resume = () => {
 						<div className="relative resume-item pb-6 mb-2 pl-9">
 							<h3 className="font-medium text-2xl">MARYLINK</h3>
 							<h4 className="text-xl my-2">WordPress Developer</h4>
-							<p className="opacity-70 text-base">June 2016 - Present</p>
+							<p className="text-gray-500 text-base">June 2016 - Present</p>
 						</div>
 						<div className="relative resume-item pb-6 mb-2 pl-9">
 							<h3 className="font-medium text-2xl">Upwork</h3>
-							<h4 className="text-xl my-2">Web Application Developer</h4>
-							<p className="opacity-70 text-base">November 2015 - Present</p>
-							<div className="mb-5"></div>
-							<h4 className="text-xl my-2">Web Designer &amp; Developer</h4>
-							<p className="opacity-70 text-base">March 2011 - Present</p>
+							<h4 className="text-xl my-2">WordPress Theme &amp; Plugin Developer</h4>
+							<p className="text-gray-500 text-base">November 2015 - Present</p>
 						</div>
 						<div className="relative resume-item pb-6 mb-2 pl-9">
 							<h3 className="font-medium text-2xl">upnrunn™ technologies</h3>
 							<h4 className="text-xl my-2">WordPress Developer</h4>
-							<p className="opacity-70 text-base">May 2018 - October 2018 (6 months)</p>
+							<p className="text-gray-500 text-base">May 2018 - October 2018 (6 months)</p>
 						</div>
 						<div className="relative resume-item pb-6 mb-2 pl-9">
 							<h3 className="font-medium text-2xl">Elance</h3>
 							<h4 className="text-xl my-2">Web Designer &amp; Developer</h4>
-							<p className="opacity-70 text-base">November 2015 - January 2016 (3 months)</p>
+							<p className="text-gray-500 text-base">November 2015 - January 2016 (3 months)</p>
 						</div>
 						<div className="relative resume-item pb-6 mb-2 pl-9">
 							<h3 className="font-medium text-2xl">DevsGround</h3>
 							<h4 className="text-xl my-2">Web Designer &amp; Developer</h4>
-							<p className="opacity-70 text-base">July 2014 - November 2015 (1 year 5 months)</p>
+							<p className="text-gray-500 text-base">July 2014 - November 2015 (1 year 5 months)</p>
 						</div>
 					</div>
 				</div>
