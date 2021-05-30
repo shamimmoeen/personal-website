@@ -16,7 +16,7 @@ const Home = () => {
 						I'm Mainul Hassan Main
 					</h2>
 					<h3 className="text-xl xl:text-2xl">a Frontend Developer</h3>
-					<div className="flex justify-center lg:justify-start mt-5 md:mt-7">
+					<div className="flex justify-center lg:justify-start text-base mt-5 md:mt-7">
 						<a
 							className="btn-primary mr-3"
 							href="https://www.upwork.com/freelancers/~01e00fa4e832283b21"
