@@ -1,4 +1,5 @@
 import React from 'react';
+import { getGithubRepositoriesLink } from '../../utils/links';
 import Project from '../Project';
 
 const Projects = () => {
@@ -7,12 +8,7 @@ const Projects = () => {
 			<div className="text-base leading-loose xl:max-w-4xl xl:mx-auto">
 				<p className="text-lg">
 					A few highlights of my open-source projects. View them all{' '}
-					<a
-						href="https://github.com/shamimmoeen?tab=repositories"
-						target={'_blank'}
-						rel={'noreferrer'}
-						className="text-link"
-					>
+					<a href={getGithubRepositoriesLink()} target={'_blank'} rel={'noreferrer'} className="text-link">
 						on GitHub
 					</a>
 					.

@@ -1,4 +1,10 @@
 import React from 'react';
+import {
+	getFacebookProfileLink,
+	getTwitterProfileLink,
+	getInstagramProfileLink,
+	getContactEmail,
+} from '../../utils/links';
 
 const Contact = () => {
 	return (
@@ -13,30 +19,20 @@ const Contact = () => {
 				<p className="mb-2">Feel free to email me about anything. Want some advice? Give some feedback?</p>
 				<p className="mb-10">
 					You can also reach me around the web:{' '}
-					<a
-						href="https://www.facebook.com/shamimmoeen/"
-						target="_blank"
-						rel="noreferrer"
-						className="text-link"
-					>
+					<a href={getFacebookProfileLink()} target="_blank" rel="noreferrer" className="text-link">
 						Facebook
 					</a>
 					,{' '}
-					<a href="https://twitter.com/shamim56" target="_blank" rel="noreferrer" className="text-link">
+					<a href={getTwitterProfileLink()} target="_blank" rel="noreferrer" className="text-link">
 						Twitter
 					</a>
 					,{' '}
-					<a
-						href="https://www.instagram.com/shamimmoeen/"
-						target="_blank"
-						rel="noreferrer"
-						className="text-link"
-					>
+					<a href={getInstagramProfileLink()} target="_blank" rel="noreferrer" className="text-link">
 						Instagram
 					</a>
 				</p>
 				<a
-					href="mailto:contact@mainulhassan.info"
+					href={`mailto:${getContactEmail()}`}
 					className="inline-flex rounded bg-indigo-600 hover:bg-indigo-500 text-white px-10 py-2"
 				>
 					Say hello

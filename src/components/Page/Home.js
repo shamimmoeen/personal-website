@@ -1,4 +1,5 @@
 import React from 'react';
+import { getUpworkProfileLink, getGDriveResumeLink } from '../../utils/links';
 import Tags from '../Tags';
 
 const Home = () => {
@@ -17,20 +18,10 @@ const Home = () => {
 					</h2>
 					<h3 className="text-xl xl:text-2xl">a Frontend Developer</h3>
 					<div className="flex justify-center lg:justify-start text-base mt-5 md:mt-7">
-						<a
-							className="btn-primary mr-3"
-							href="https://www.upwork.com/freelancers/~01e00fa4e832283b21"
-							target="_blank"
-							rel="noreferrer"
-						>
+						<a className="btn-primary mr-3" href={getUpworkProfileLink()} target="_blank" rel="noreferrer">
 							Hire Me
 						</a>
-						<a
-							className="btn-secondary"
-							href="https://www.upwork.com/freelancers/~01e00fa4e832283b21"
-							target="_blank"
-							rel="noreferrer"
-						>
+						<a className="btn-secondary" href={getGDriveResumeLink()} target="_blank" rel="noreferrer">
 							My Resume
 						</a>
 					</div>

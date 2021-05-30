@@ -1,4 +1,5 @@
 import React from 'react';
+import { getGDriveResumeDownloadLink, getGDriveResumeLink } from '../../utils/links';
 
 const Resume = () => {
 	return (
@@ -70,19 +71,14 @@ const Resume = () => {
 				</div>
 				<div className="flex justify-center text-base mt-14">
 					<a
-						href="https://www.upwork.com/freelancers/~01e00fa4e832283b21"
+						href={getGDriveResumeDownloadLink()}
 						target="_blank"
 						rel="noreferrer"
 						className="btn-primary mr-3"
 					>
 						Download Resume
 					</a>
-					<a
-						href="https://www.upwork.com/freelancers/~01e00fa4e832283b21"
-						target="_blank"
-						rel="noreferrer"
-						className="btn-secondary"
-					>
+					<a href={getGDriveResumeLink()} target="_blank" rel="noreferrer" className="btn-secondary">
 						My Resume
 					</a>
 				</div>
