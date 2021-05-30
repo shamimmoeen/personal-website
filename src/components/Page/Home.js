@@ -1,4 +1,5 @@
 import React from 'react';
+import JobTitle from '../JobTitle';
 import { getUpworkProfileLink, getGDriveResumeLink } from '../../utils/links';
 import Tags from '../Tags';
 
@@ -16,7 +17,9 @@ const Home = () => {
 					<h2 className="text-3xl lg:text-4xl xl:text-5xl font-medium pb-4 xl:pb-7">
 						I'm Mainul Hassan Main
 					</h2>
-					<h3 className="text-xl xl:text-2xl">a Frontend Developer</h3>
+					<h3 className="text-xl xl:text-2xl">
+						a <JobTitle />
+					</h3>
 					<div className="flex justify-center lg:justify-start text-base mt-5 md:mt-7">
 						<a className="btn-primary mr-3" href={getUpworkProfileLink()} target="_blank" rel="noreferrer">
 							Hire Me
