@@ -12,7 +12,7 @@
 
 @layer components {
     .text-link {
-        @apply border-b-[3px] hover:text-gray-900 border-indigo-200 hover:border-indigo-300;
+        @apply border-b-[3px] text-gray-600 hover:text-gray-900 border-indigo-200 hover:border-indigo-300 font-medium;
     }
 
     .btn-primary {
