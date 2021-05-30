@@ -39,6 +39,7 @@ const Tags = () => {
 				{ value: 'JSON', weight: 18 },
 				{ value: 'SCSS', weight: 21 },
 				{ value: 'Gulp', weight: 15 },
+				{ value: 'Docker', weight: 20 },
 				{ value: 'Javascript', weight: 18 },
 				{ value: 'npm', weight: 14 },
 				{ value: 'React', weight: 24 },
