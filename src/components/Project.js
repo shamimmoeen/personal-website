@@ -3,8 +3,8 @@ import { ExternalLinkIcon } from '@heroicons/react/outline';
 
 const Project = ({ title, githubUrl, wpPluginDirectoryUrl, children }) => {
 	return (
-		<div className="bg-[#edf2f7] p-4 mb-8">
-			<h3 className="text-xl font-medium mb-1">{title}</h3>
+		<div className="mb-10">
+			<h2 className="text-2xl font-medium mb-2"># {title}</h2>
 			<p className="text-gray-500">{children}</p>
 			<div className="mt-3">
 				{githubUrl && (

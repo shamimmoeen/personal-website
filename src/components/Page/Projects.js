@@ -5,8 +5,8 @@ import Project from '../Project';
 const Projects = () => {
 	return (
 		<div className="max-w-7xl mx-auto px-6 md:px-4 pt-10 pb-5 lg:py-20 text-gray-700">
-			<div className="text-base leading-loose xl:max-w-4xl xl:mx-auto">
-				<p className="text-lg">
+			<div className="text-base leading-loose xl:px-8">
+				<p className="text-xl">
 					A few highlights of my open-source projects. View them all{' '}
 					<a href={getGithubRepositoriesLink()} target={'_blank'} rel={'noreferrer'} className="text-link">
 						on GitHub
