@@ -8,12 +8,7 @@ const Project = ({ title, githubUrl, wpPluginDirectoryUrl, children }) => {
 			<p className="text-gray-500">{children}</p>
 			<div className="mt-3">
 				{githubUrl && (
-					<a
-						href={githubUrl}
-						target="_blank"
-						rel="noreferrer"
-						className="text-link inline-flex items-center leading-6 mr-3"
-					>
+					<a href={githubUrl} target="_blank" rel="noreferrer" className="text-link items-center mr-3">
 						GitHub
 						<ExternalLinkIcon className="w-4 h-4 ml-1" />
 					</a>
@@ -24,7 +19,7 @@ const Project = ({ title, githubUrl, wpPluginDirectoryUrl, children }) => {
 						href={wpPluginDirectoryUrl}
 						target="_blank"
 						rel="noreferrer"
-						className="text-link inline-flex items-center leading-6 mr-3"
+						className="text-link items-center mr-3"
 					>
 						WordPress Plugin Directory
 						<ExternalLinkIcon className="w-4 h-4 ml-1" />
