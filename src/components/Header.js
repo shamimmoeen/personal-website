@@ -8,7 +8,7 @@ import Linkedin from './Social_Icon/Linkedin';
 import DarkModeSwitch from './DarkModeSwitch';
 import string_to_slug from '../utils/slugify';
 
-const menuItems = ['About Me', 'Resume', 'Projects', 'Contact'];
+const menuItems = ['About Me', 'Services', 'Resume', 'Projects', 'Contact'];
 
 const Header = () => {
 	const getLinkTo = (route) => {
@@ -21,7 +21,7 @@ const Header = () => {
 				{({ open }) => (
 					<>
 						<div className={'max-w-7xl mx-auto px-6 md:px-4'}>
-							<div className={'flex justify-between items-center py-6'}>
+							<div className={'flex justify-between items-center py-4 2xl:py-6'}>
 								<div className={'justify-start flex-1'}>
 									<Avatar size={40} />
 								</div>
