@@ -4,7 +4,7 @@ import { ExternalLinkIcon } from '@heroicons/react/outline';
 const Project = ({ title, githubUrl, wpPluginDirectoryUrl, children }) => {
 	return (
 		<div className="bg-[#edf2f7] p-4 mb-8">
-			<h3 className="text-xl font-medium mb-2">{title}</h3>
+			<h3 className="text-xl font-medium mb-1">{title}</h3>
 			<p className="text-gray-500">{children}</p>
 			<div className="mt-3">
 				{githubUrl && (
@@ -21,7 +21,7 @@ const Project = ({ title, githubUrl, wpPluginDirectoryUrl, children }) => {
 						rel="noreferrer"
 						className="text-link items-center mr-3"
 					>
-						WordPress Plugin Directory
+						WordPress.org
 						<ExternalLinkIcon className="w-4 h-4 ml-1" />
 					</a>
 				)}
