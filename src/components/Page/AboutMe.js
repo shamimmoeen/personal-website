@@ -10,7 +10,6 @@ const AboutMe = () => {
 				</div>
 				<div className="lg:ml-8 lg:py-4 text-center lg:text-left">
 					<div className="text-lg leading-loose">
-						<h3 className="text-xl pb-1 font-medium">Who am I?</h3>
 						<p className="pb-7">
 							I'm Mainul Hassan Main from{' '}
 							<a
@@ -23,14 +22,11 @@ const AboutMe = () => {
 							</a>
 							.
 						</p>
-						<h3 className="text-xl pb-1 font-medium">What am I doing?</h3>
 						<p className="pb-7">
 							I work full time as a WordPress Developer. In my free time, I study front-end development
 							with React.
 						</p>
-						<h3 className="text-xl pb-1 font-medium">How much experience do I have?</h3>
 						<p className="pb-7">I started developing websites using WordPress in 2014.</p>
-						<h3 className="text-xl pb-1 font-medium">What is my goal?</h3>
 						<p className="pb-7 lg:pb-0">
 							My goal is to build useful apps and contribute to open-source projects while working on a
 							full-time job.
