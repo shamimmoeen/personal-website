@@ -8,7 +8,7 @@ import Linkedin from './Social_Icon/Linkedin';
 import DarkModeSwitch from './DarkModeSwitch';
 import string_to_slug from '../utils/slugify';
 
-const menuItems = ['About Me', 'Services', 'Resume', 'Projects', 'Contact'];
+const menuItems = ['About Me', 'Resume', 'Projects', 'Contact'];
 
 const Header = () => {
 	const getLinkTo = (route) => {
