@@ -4,7 +4,7 @@ import Project from '../Project';
 
 const Projects = () => {
 	return (
-		<div className="max-w-7xl mx-auto px-6 md:px-4 pt-10 pb-5 lg:py-20 text-gray-700">
+		<div className="max-w-7xl mx-auto px-6 md:px-4 pt-10 pb-5 lg:py-20 text-gray-700 dark:text-gray-300">
 			<div className="text-base leading-loose xl:px-8">
 				<p className="text-xl">
 					A few highlights of my open-source projects. View them all{' '}

@@ -1,24 +1,23 @@
 import React from 'react';
-import { useState } from 'react';
 import { MoonIcon, SunIcon } from '@heroicons/react/solid';
+import useDarkMode from './hooks/useDarkMode';
 
 const DarkModeSwitch = () => {
-	const [enabled, setEnabled] = useState(false);
+	const [colorTheme, setTheme] = useDarkMode();
 
 	const toggleEnable = () => {
-		const _enabled = !enabled;
-		setEnabled(_enabled);
+		setTheme(colorTheme);
 	};
 
 	const width = 'w-7';
 
 	return (
-		<button onClick={toggleEnable} className="p-1">
+		<button onClick={toggleEnable} className="p-1 outline-none focus:outline-none">
 			<span className="sr-only">Toggle Dark Mode</span>
-			{!enabled ? (
+			{colorTheme === 'dark' ? (
 				<SunIcon className={`${width} text-yellow-400`} />
 			) : (
-				<MoonIcon className={`${width} text-green-400`} />
+				<MoonIcon className={`${width} text-gray-200`} />
 			)}
 		</button>
 	);

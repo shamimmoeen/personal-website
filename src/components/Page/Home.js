@@ -5,7 +5,7 @@ import Tags from '../Tags';
 
 const Home = () => {
 	return (
-		<div className="max-w-6xl 2xl:max-w-7xl mx-auto px-6 md:px-4 py-5 text-gray-700">
+		<div className="max-w-6xl 2xl:max-w-7xl mx-auto px-6 md:px-4 py-5 text-gray-700 dark:text-gray-300">
 			<div className="lg:flex justify-start items-center xl:px-8">
 				<div className="mb-7 lg:mb-0 xl:mr-8 text-center lg:text-left">
 					<h4 className="text-2xl xl:text-3xl pb-3 xl:pb-5">

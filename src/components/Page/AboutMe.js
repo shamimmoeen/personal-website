@@ -3,7 +3,7 @@ import avatar from '../../images/avatar-512.jpg';
 
 const AboutMe = () => {
 	return (
-		<div className="max-w-6xl 2xl:max-w-7xl mx-auto px-6 md:px-4 pt-10 pb-5 2xl:py-20 text-gray-700">
+		<div className="max-w-6xl 2xl:max-w-7xl mx-auto px-6 md:px-4 pt-10 pb-5 2xl:py-20 text-gray-700 dark:text-gray-300">
 			<div className="lg:flex justify-start items-center xl:px-8">
 				<div className="flex flex-1 justify-center mb-8 lg:mb-0 lg:min-w-[450px]">
 					<img src={avatar} alt={'Mainul Hassan Main'} className="rounded lg:avatar-perspective" />

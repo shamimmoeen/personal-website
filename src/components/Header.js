@@ -17,7 +17,7 @@ const Header = () => {
 
 	return (
 		<>
-			<Popover className="relative bg-white border-b-2 border-gray-100">
+			<Popover className="relative bg-white dark:bg-gray-900 border-b-2 border-gray-100 dark:border-gray-800">
 				{({ open }) => (
 					<>
 						<div className={'max-w-7xl mx-auto px-6 md:px-4'}>
@@ -37,7 +37,7 @@ const Header = () => {
 								<div className={'hidden md:flex flex-auto justify-center'}>
 									{menuItems.map((item) => (
 										<NavLink
-											className="text-xl inline-flex items-center font-medium text-gray-500 hover:text-gray-700 mx-3"
+											className="text-xl inline-flex items-center font-medium text-gray-500 dark:text-gray-200 hover:text-gray-700 dark:hover:text-gray-400 mx-3"
 											activeClassName="!text-indigo-500"
 											key={item}
 											to={'/' + getLinkTo(item)}
@@ -47,8 +47,8 @@ const Header = () => {
 									))}
 								</div>
 								<div className={'hidden md:flex flex-1 justify-end items-center'}>
-									<Github classes={'p-1 mx-1 text-[#333]'} />
-									<Linkedin classes={'p-1 mx-1 text-[#0a66c2]'} />
+									<Github classes={'p-1 mx-1 text-[#333] dark:text-gray-200'} />
+									<Linkedin classes={'p-1 mx-1 text-[#0a66c2] dark:text-gray-200'} />
 
 									<div className="flex ml-4">
 										<DarkModeSwitch />
@@ -87,7 +87,7 @@ const Header = () => {
 											{menuItems.map((item) => (
 												<div className="self-start">
 													<NavLink
-														className="text-xl text-gray-500 font-medium hover:text-gray-700"
+														className="text-xl text-gray-500 dark:text-gray-200 font-medium hover:text-gray-700 dark:hover:text-gray-400"
 														activeClassName="!text-indigo-500"
 														key={item}
 														to={'/' + getLinkTo(item)}
@@ -101,8 +101,8 @@ const Header = () => {
 											Get in touch
 										</h4>
 										<div className="flex">
-											<Github classes="text-[#333]" />
-											<Linkedin classes="text-[#0a66c2] ml-2" />
+											<Github classes="text-[#333] dark:text-gray-200" />
+											<Linkedin classes="text-[#0a66c2] ml-2 dark:text-gray-200" />
 										</div>
 									</div>
 								</div>

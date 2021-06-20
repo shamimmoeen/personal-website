@@ -7,7 +7,7 @@ const Resume = () => {
 	const headingClasses = 'text-2xl font-medium tracking-wide text-indigo-500 border-b-[3px] border-indigo-500';
 
 	return (
-		<div className="max-w-7xl mx-auto px-6 md:px-4 pt-10 pb-16 lg:py-20 text-gray-700">
+		<div className="max-w-7xl mx-auto px-6 md:px-4 pt-10 pb-16 lg:py-20 text-gray-700 dark:text-gray-300">
 			<div className="text-lg leading-loose xl:max-w-4xl xl:mx-auto">
 				<div className="md:flex mb-12">
 					<div className={wrapperLeftClasses}>
