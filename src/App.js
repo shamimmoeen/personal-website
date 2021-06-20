@@ -6,6 +6,7 @@ import AboutMe from './components/Page/AboutMe';
 import Resume from './components/Page/Resume';
 import Projects from './components/Page/Projects';
 import Contact from './components/Page/Contact';
+import NotFound from './components/Page/NotFound';
 
 function App() {
 	return (
@@ -27,6 +28,9 @@ function App() {
 					</Route>
 					<Route path={'/contact'}>
 						<Contact />
+					</Route>
+					<Route>
+						<NotFound />
 					</Route>
 				</Switch>
 			</div>
