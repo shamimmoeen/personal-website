@@ -9,16 +9,10 @@ const DarkModeSwitch = () => {
 		setTheme(colorTheme);
 	};
 
-	const width = 'w-7';
-
 	return (
-		<button onClick={toggleEnable} className="p-1 outline-none focus:outline-none">
+		<button onClick={toggleEnable} className="p-1 w-8 text-yellow-400 outline-none focus:outline-none">
 			<span className="sr-only">Toggle Dark Mode</span>
-			{colorTheme === 'dark' ? (
-				<SunIcon className={`${width} text-yellow-400`} />
-			) : (
-				<MoonIcon className={`${width} text-gray-200`} />
-			)}
+			{colorTheme === 'dark' ? <SunIcon /> : <MoonIcon />}
 		</button>
 	);
 };
