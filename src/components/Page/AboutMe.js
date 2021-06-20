@@ -8,7 +8,7 @@ const AboutMe = () => {
 				<div className="flex flex-1 justify-center mb-8 lg:mb-0 lg:min-w-[450px]">
 					<img src={avatar} alt={'Mainul Hassan Main'} className="rounded lg:avatar-perspective" />
 				</div>
-				<div className="lg:ml-8 lg:py-4 text-center lg:text-left">
+				<div className="lg:ml-8 lg:py-4 text-center lg:text-left lg:min-h-[450px] lg:flex lg:items-center">
 					<div className="text-lg leading-loose">
 						<p className="pb-7">
 							I'm Mainul Hassan Main from{' '}
